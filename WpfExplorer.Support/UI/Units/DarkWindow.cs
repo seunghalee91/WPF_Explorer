@@ -6,7 +6,8 @@ namespace WpfExplorer.Support.UI.Units
     {
         static DarkWindow()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(DarkWindow), new FrameworkPropertyMetadata(typeof(DarkWindow)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(DarkWindow)
+                , new FrameworkPropertyMetadata(typeof(DarkWindow)));
         }
 
         public DarkWindow()
