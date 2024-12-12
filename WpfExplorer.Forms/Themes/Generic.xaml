@@ -6,6 +6,29 @@
 
     <Style TargetType="{x:Type views:ExplorerWindow}" 
            BasedOn="{StaticResource {x:Type based:DarkWindow}}">
-    </Style>
 
+        <Setter Property="Tag">
+            <Setter.Value>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="11"/>
+                    <Button Content="22"/>
+                    <Button Content="33"/>
+                </StackPanel>
+            </Setter.Value>
+        </Setter>
+        
+        <Setter Property="Content">
+            <Setter.Value>
+                <StackPanel>
+                    <Slider/>
+                    <TextBox/>
+                    <CheckBox/>
+                    <ComboBox/>
+                </StackPanel>
+            </Setter.Value>
+        </Setter>
+
+       
+        
+    </Style>
 </ResourceDictionary>

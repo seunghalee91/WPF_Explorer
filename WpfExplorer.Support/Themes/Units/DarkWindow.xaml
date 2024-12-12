@@ -44,9 +44,16 @@
                             <units:MinimizeButton Grid.Column="1"/>
                             <units:MaximizeButton Grid.Column="2"/>
                             <units:CloseButton Grid.Column="3"/>
+
+                            <!--ContentSource = "Tag"인 데이터를 보여준다.-->
+                            <ContentPresenter ContentSource="Tag" 
+                                              Grid.Row="0" />
+
+                            <!--ContentSource = "Content"인 데이터를 보여준다.-->
+                            <ContentPresenter ContentSource="Content"
+                                              Grid.Row="1" 
+                                              Grid.ColumnSpan="4"/>    
                         </Grid>
-                        
-                        <!--<units:CloseButton/>-->
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
