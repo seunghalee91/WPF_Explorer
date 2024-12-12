@@ -6,5 +6,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/WpfExplorer.Support;component/Themes/Units/DarkWindow.xaml"/>
         <ResourceDictionary Source="/WpfExplorer.Support;component/Themes/Units/CloseButton.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Support;component/Themes/Units/MinimizeButton.xaml"/>
+        <ResourceDictionary Source="/WpfExplorer.Support;component/Themes/Units/MaximizeButton.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
