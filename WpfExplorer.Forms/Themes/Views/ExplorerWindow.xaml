@@ -6,14 +6,18 @@
 
     <Style TargetType="{x:Type views:ExplorerWindow}" 
            BasedOn="{StaticResource {x:Type based:DarkWindow}}">
-        <Setter Property="Title" Value="Title_Explorer"/>
+        <Setter Property="Title" Value="Explorer_Window"/>
         <Setter Property="Content">
             <Setter.Value>
-                <StackPanel>
-                    <Border>
-
-                    </Border>
-                </StackPanel>
+                <Border>
+                    <TreeView>
+                        <TreeViewItem Header="item1">
+                            <TreeViewItem Header="item2">
+                                <TreeViewItem Header="item3"/>
+                            </TreeViewItem>
+                        </TreeViewItem>
+                    </TreeView>
+                </Border>
             </Setter.Value>
         </Setter>
     </Style>
