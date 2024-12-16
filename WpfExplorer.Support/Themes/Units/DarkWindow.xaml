@@ -45,9 +45,9 @@
                             <units:MinimizeButton Grid.Column="1"/>
                             <units:MaximizeButton Grid.Column="2"/>
                             <units:CloseButton Grid.Column="3"/>
-                            
-                            
-                            <!-- Forms의 Generic.xaml에 title데이터를 바인딩 -->
+
+
+                            <!-- Forms의 ExplorerWindow.xaml에 title데이터를 바인딩 -->
                             <TextBlock Text="{TemplateBinding Title}"/>
 
                             <!--ContentSource = "Content"인 데이터를 보여준다.-->
