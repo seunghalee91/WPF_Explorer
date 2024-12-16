@@ -11,7 +11,6 @@ namespace WpfExplorer
             base.OnStartup(e);
 
             ExplorerWindow win = new ExplorerWindow();
-            win.Title = "lee";
             win.ShowDialog();
         }
     }

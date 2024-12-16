@@ -6,29 +6,15 @@
 
     <Style TargetType="{x:Type views:ExplorerWindow}" 
            BasedOn="{StaticResource {x:Type based:DarkWindow}}">
-
-        <Setter Property="Tag">
-            <Setter.Value>
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="11"/>
-                    <Button Content="22"/>
-                    <Button Content="33"/>
-                </StackPanel>
-            </Setter.Value>
-        </Setter>
-        
+        <Setter Property="Title" Value="TEST _ Explorer"/>
         <Setter Property="Content">
             <Setter.Value>
                 <StackPanel>
-                    <Slider/>
-                    <TextBox/>
-                    <CheckBox/>
-                    <ComboBox/>
+                    <Border>
+                        
+                    </Border>
                 </StackPanel>
             </Setter.Value>
         </Setter>
-
-       
-        
     </Style>
 </ResourceDictionary>

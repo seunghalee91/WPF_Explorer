@@ -10,6 +10,7 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="MinWidth" Value="200"/>
         <Setter Property="MinHeight" Value="200"/>
+        <Setter Property="Foreground" Value="AliceBlue"/>
         <Setter Property="WindowChrome.WindowChrome">
             <Setter.Value>
                 <WindowChrome CaptionHeight="0"
@@ -44,10 +45,10 @@
                             <units:MinimizeButton Grid.Column="1"/>
                             <units:MaximizeButton Grid.Column="2"/>
                             <units:CloseButton Grid.Column="3"/>
-
-                            <!--ContentSource = "Tag"인 데이터를 보여준다.-->
-                            <ContentPresenter ContentSource="Tag" 
-                                              Grid.Row="0" />
+                            
+                            
+                            <!-- Forms의 Generic.xaml에 title데이터를 바인딩 -->
+                            <TextBlock Text="{TemplateBinding Title}"/>
 
                             <!--ContentSource = "Content"인 데이터를 보여준다.-->
                             <ContentPresenter ContentSource="Content"
