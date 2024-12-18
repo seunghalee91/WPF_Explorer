@@ -2,22 +2,17 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:based="clr-namespace:WpfExplorer.Support.UI.Units;assembly=WpfExplorer.Support"
-    xmlns:views="clr-namespace:WpfExplorer.Forms.UI.Views">
+    xmlns:views="clr-namespace:WpfExplorer.Forms.UI.Views"
+    xmlns:units="clr-namespace:WpfExplorer.Forms.UI.Units">
 
     <Style TargetType="{x:Type views:ExplorerWindow}" 
            BasedOn="{StaticResource {x:Type based:DarkWindow}}">
         <Setter Property="Title" Value="Explorer_Window"/>
         <Setter Property="Content">
             <Setter.Value>
-                <Border>
-                    <TreeView>
-                        <TreeViewItem Header="item1">
-                            <TreeViewItem Header="item2">
-                                <TreeViewItem Header="item3"/>
-                            </TreeViewItem>
-                        </TreeViewItem>
-                    </TreeView>
-                </Border>
+                <units:FolderTreeView>
+                    <units:FolderTreeViewItem Header="FolderTreeViewItem"></units:FolderTreeViewItem>
+                </units:FolderTreeView>
             </Setter.Value>
         </Setter>
     </Style>

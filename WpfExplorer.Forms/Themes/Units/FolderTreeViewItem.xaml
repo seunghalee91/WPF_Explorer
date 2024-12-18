@@ -6,8 +6,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:FolderTreeViewItem}">
-                    <Border>
-                    </Border>
+                    <TextBlock Text="{TemplateBinding Header}"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

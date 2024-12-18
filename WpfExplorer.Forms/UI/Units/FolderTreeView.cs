@@ -9,5 +9,11 @@ namespace WpfExplorer.Forms.UI.Units
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(FolderTreeView), new FrameworkPropertyMetadata(typeof(FolderTreeView)));
         }
+
+        protected override DependencyObject GetContainerForItemOverride()
+        {
+            //return base.GetContainerForItemOverride();
+            return new FolderTreeViewItem();
+        }
     }
 }
