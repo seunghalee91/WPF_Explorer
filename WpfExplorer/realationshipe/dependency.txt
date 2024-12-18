@@ -1,0 +1,19 @@
+﻿# 의존성 
+
+Generic.xaml
+- ExplorerWindow.xaml
+- FolderTreeView.xaml
+- FolderTreeViewItem.xaml
+
+ExplorerWindow.xaml
+- ExplorerWindow.cs
+- FolderTreeView.cs
+- FolderTreeViewItem.cs
+
+FolderTreeView.xaml
+- FolderTreeView.cs 
+  - FolderTreeViewItem.cs
+
+FolderTreeViewItem.xaml
+- FolderTreeViewItem.cs
+
