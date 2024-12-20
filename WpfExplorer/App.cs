@@ -1,17 +1,14 @@
-﻿using System.Windows;
+﻿using Jamesnet.Wpf.Controls;
+using System.Windows;
 using WpfExplorer.Forms.UI.Views;
-using WpfExplorer.Support.UI.Units;
 
 namespace WpfExplorer
 {
-    internal class App : Application
+    internal class App : JamesApplication
     {
-        protected override void OnStartup(StartupEventArgs e)
+        protected override Window CreateShell()     //main window 뭐로 사용할건지 지정
         {
-            base.OnStartup(e);
-
-            ExplorerWindow win = new ExplorerWindow();
-            win.ShowDialog();
+            return new ExplorerWindow();
         }
     }
 }
