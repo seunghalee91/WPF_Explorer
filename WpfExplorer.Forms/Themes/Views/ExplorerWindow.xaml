@@ -10,9 +10,12 @@
         <Setter Property="Title" Value="Explorer_Window"/>
         <Setter Property="Content">
             <Setter.Value>
-                <units:FolderTreeView>
-                    <units:FolderTreeViewItem Header="FolderTreeViewItem"></units:FolderTreeViewItem>
-                </units:FolderTreeView>
+                <StackPanel>
+                    <TextBlock Text="{Binding TESTMessage}"/>
+                    <units:FolderTreeView>
+                        <units:FolderTreeViewItem Header="FolderTreeViewItem"></units:FolderTreeViewItem>
+                    </units:FolderTreeView>
+                </StackPanel>
             </Setter.Value>
         </Setter>
     </Style>

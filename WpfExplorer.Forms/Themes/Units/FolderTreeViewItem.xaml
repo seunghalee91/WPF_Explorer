@@ -3,6 +3,7 @@
                     xmlns:units="clr-namespace:WpfExplorer.Forms.UI.Units">
 
     <Style TargetType="{x:Type units:FolderTreeViewItem}">
+        <Setter Property="Foreground" Value="Yellow"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type units:FolderTreeViewItem}">
