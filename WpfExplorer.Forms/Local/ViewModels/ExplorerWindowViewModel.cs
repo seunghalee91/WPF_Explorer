@@ -8,11 +8,11 @@ namespace WpfExplorer.Forms.Local.ViewModels
 {
     public class ExplorerWindowViewModel
     {
-        public string TESTMessage{get;set;}
+        //public string TESTMessage{get;set;}
 
         public ExplorerWindowViewModel()
         {
-            TESTMessage = "Explorer view model";
+            //TESTMessage = "Explorer view model";
         }
     }
 }
