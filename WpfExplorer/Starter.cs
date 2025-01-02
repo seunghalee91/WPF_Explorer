@@ -9,6 +9,7 @@ namespace WpfExplorer
         {
             _ = new App()
                 .AddWireDataContext<WireDataContext>()      //app 실행전에 WireDataContext의 클래스 안의 view,viewmodel 연결 관계를 추가해 줌
+                .AddInversionModule<HelperModules>()
                 .Run();
         }
     }
